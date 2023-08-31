@@ -1,8 +1,8 @@
 #include "binary_trees.h"
 /**
- * find_depth - Function that finds depth of binary tree/
+ * find_depth - Finds the depth of a binary tree.
  * @tree: Pointer to the root node of the tree to check.
- * Return: Returns depth of leftmost leaf
+ * Return: Returns the depth of the leftmost leaf.
  */
 int find_depth(const binary_tree_t *tree)
 {
@@ -17,11 +17,11 @@ int find_depth(const binary_tree_t *tree)
 	return (i);
 }
 /**
- * test_is_perfect - Function that test if a binary tree is perfect or not.
+ * test_is_perfect - Tests if a binary tree is perfect or not.
  * @tree: Pointer to the root node of the tree to check.
- * @count: counter levels
- * @level: Level of the binary tree
- * Return: If tree is NULL, your function must return 0
+ * @count: Counter levels.
+ * @level: Level of the binary tree.
+ * Return: If tree is NULL, the function returns 0.
  */
 int test_is_perfect(const binary_tree_t *tree, int count, int level)
 {
@@ -45,9 +45,9 @@ int test_is_perfect(const binary_tree_t *tree, int count, int level)
 }
 
 /**
- * binary_tree_is_perfect - Function that checks if a binary tree is perfect
+ * binary_tree_is_perfect - Checks if a binary tree is perfect.
  * @tree: Pointer to the root node of the tree to check.
- * Return: If tree is NULL, your function must return 0
+ * Return: If tree is NULL, the function returns 0.
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
