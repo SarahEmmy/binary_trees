@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 
 /**
-* scale - aux function that measures the height of a binary tree
-* @tree: pointer to the root node of the tree to measure the height
-* Return: height of a binary tree, 0 is tree is NULL
-**/
+ * scale - Auxillary function that measures the height of a binary tree.
+ * @tree: Pointer to the root node of the tree to measure the height.
+ * Return: Height of the binary tree. Returns 0 if tree is NULL.
+ */
 int scale(const binary_tree_t *tree)
 {
 	int ll = 1;
@@ -24,12 +24,11 @@ int scale(const binary_tree_t *tree)
 }
 
 /**
-* print_level - aux function to level travel
-* using level-order traversal
-* @tree: pointer to the root node of the tree to traverse
-* @func: pointer to a function to call for each node
-* @level: actual level
-**/
+ * print_level - Auxillary function for level-order traversal.
+ * @tree: Pointer to the root node of the tree to traverse.
+ * @func: Pointer to a function to call for each node.
+ * @level: Actual level.
+ */
 void print_level(binary_tree_t *tree, int level, void (*func)(int))
 {
 	if (tree != NULL)
@@ -47,11 +46,10 @@ void print_level(binary_tree_t *tree, int level, void (*func)(int))
 }
 
 /**
-* binary_tree_levelorder - goes through a binary tree
-* using level-order traversal
-* @tree: pointer to the root node of the tree to traverse
-* @func: pointer to a function to call for each node
-**/
+ * binary_tree_levelorder - Traverses a binary tree using level-order traversal.
+ * @tree: Pointer to the root node of the tree to traverse.
+ * @func: Pointer to a function to call for each node.
+ */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	int level, height;
