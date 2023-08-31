@@ -27,10 +27,9 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	}
 }
 /**
- * binary_tree_balance - Function that measures the balance
- * factor of a binary tree
- * @tree: Pointer to the root node of the tree to measure the balance factor
- * Return: numbers of leaves in the binary tree
+ * binary_tree_balance - Measures the balance factor of a binary tree.
+ * @tree: Pointer to the root node of the tree to measure the balance factor.
+ * Return: Balance factor of the binary tree.
  */
 
 int binary_tree_balance(const binary_tree_t *tree)
