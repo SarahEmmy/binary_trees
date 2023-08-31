@@ -1,12 +1,12 @@
 #include "binary_trees.h"
 
 /**
-* bst - binary_tree_is_bst helper
-* @tree: pointer to the root node of the tree to check
-* @max: min value
-* @min: max value
-* Return: 1 if tree is a valid BST, and 0 otherwise or if tree NULL
-**/
+ * bst - Helper function for binary_tree_is_bst.
+ * @tree: Pointer to the root node of the tree to check.
+ * @max: Maximum value.
+ * @min: Minimum value.
+ * Return: 1 if tree is a valid BST, and 0 otherwise or if tree is NULL.
+ */
 int bst(binary_tree_t *tree, int min, int max)
 {
 	binary_tree_t *lt, *rt;
@@ -23,10 +23,10 @@ int bst(binary_tree_t *tree, int min, int max)
 }
 
 /**
-* binary_tree_is_bst - checks if a binary tree is a valid Binary Search Tree
-* @tree: pointer to the root node of the tree to check
-* Return: 1 if tree is a valid BST, and 0 otherwise or if tree NULL
-**/
+ * binary_tree_is_bst - Checks if a binary tree is a valid Binary Search Tree.
+ * @tree: Pointer to the root node of the tree to check.
+ * Return: 1 if tree is a valid BST, and 0 otherwise or if tree is NULL.
+ */
 int binary_tree_is_bst(const binary_tree_t *tree)
 {
 	if (tree != NULL)
