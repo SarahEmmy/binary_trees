@@ -3,10 +3,10 @@
 /**
  * bst_search - Searches for a value in a Binary Search Tree.
  *
- * @tree: A pointer to the root node of the BST to search.
- * @value: The value to search in the tree.
+ * @tree: Pointer to the root node of the BST to search.
+ * @value: The value to search for in the tree.
  *
- * Return: A pointer to the node containing a value equals to value.
+ * Return: Pointer to the node containing a value equal to `value`.
  */
 bst_t *bst_search(const bst_t *tree, int value)
 {
