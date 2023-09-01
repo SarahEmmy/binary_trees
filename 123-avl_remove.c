@@ -9,11 +9,11 @@ void bal(avl_t **tree);
 /**
  * avl_remove - Removes a node from an AVL tree.
  *
- * @root: A pointer to the root node of the tree for removing a node.
- * @value: The value to remove in the tree.
+ * @root: Pointer to the root node of the tree for node removal.
+ * @value: The value to be removed from the tree.
  *
- * Return: A pointer to the new root node of the tree after
- *         removing the desired value, and after rebalancing
+ * Return: Pointer to the new root node of the tree after removing the
+ *         specified value and rebalancing if needed.
  */
 avl_t *avl_remove(avl_t *root, int value)
 {
